@@ -1,51 +1,58 @@
-/* Main styles */
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:800);
-.text {
-  fill: none;
-  stroke-width: 3;
-  stroke-linejoin: round;
-  stroke-dasharray: 70 330;
-  stroke-dashoffset: 0;
-  -webkit-animation: stroke 6s infinite linear;
-  animation: stroke 6s infinite linear; }
-  .text:nth-child(5n + 1) {
-    stroke: #F2385A;
-    -webkit-animation-delay: -1.2s;
-    animation-delay: -1.2s; }
-  .text:nth-child(5n + 2) {
-    stroke: #F5A503;
-    -webkit-animation-delay: -2.4s;
-    animation-delay: -2.4s; }
-  .text:nth-child(5n + 3) {
-    stroke: #E9F1DF;
-    -webkit-animation-delay: -3.6s;
-    animation-delay: -3.6s; }
-  .text:nth-child(5n + 4) {
-    stroke: #56D9CD;
-    -webkit-animation-delay: -4.8s;
-    animation-delay: -4.8s; }
-  .text:nth-child(5n + 5) {
-    stroke: #3AA1BF;
-    -webkit-animation-delay: -6s;
-    animation-delay: -6s; }
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around; }
 
-@-webkit-keyframes stroke {
-  100% {
-    stroke-dashoffset: -400; } }
+.flex-item {
+  padding: 5px;
+  margin-top: 10px;
+  text-align: center; }
 
-@keyframes stroke {
-  100% {
-    stroke-dashoffset: -400; } }
+.zesty-app-wrapper {
+  background-color: #54b8b9;
+  padding: 20px;
+  height: 212px; }
 
-body {
-  background-size: .2em 100%;
-  font: 3em/2 helvetica, Impact;
-  text-transform: uppercase;
-  margin: 0; }
-
-#git-notification {
-  color: white;
-  font-size: 12px;
+.zesty-phone-img {
   position: absolute;
-  top: 0;
-  right: 10px; }
+  top: -50px; }
+
+.gtza-header {
+  color: white;
+  font-weight: bold;
+  font-family: helvetica; }
+
+.zesty-learn-more-wrapper {
+  background-color: #e6e9e9; }
+
+.zesty-header-wrapper {
+  padding: 20px; }
+
+.zesty-footer-wrapper {
+  background-color: #414141;
+  color: white; }
+
+.footer-subset {
+  display: inline-block;
+  width: 19%;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  .footer-subset a {
+    color: white;
+    text-decoration: none; }
+    .footer-subset a:hover {
+      cursor: pointer;
+      text-decoration: underline;
+      color: white; }
+
+.nhs-services-wrapper {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 40px; }
